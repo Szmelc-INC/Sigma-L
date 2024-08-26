@@ -1,4 +1,6 @@
 # SigmaⓁ Communicator
+<img src="https://i.imgur.com/dAGTvMK.png" width="350">
+
 
 ## About:
 > SigmaⓁ started as a fun idea that became a real project. Created by [$x66] and [Se2] under [Szmelc.INC] and [Entropy Linux], it's a lightweight, encrypted, and customizable p2p communication tool. We’re focused on keeping it secure ans simple. \
