@@ -7,7 +7,8 @@
 > Android & iOS Apps are also possibly comming in near future!
 
 ### Some other details:
-> SigmaⓁ uses port `2137` as default communication's port \
+> SigmaⓁ uses `tcp` port `2137` as default communication's port. \
+> (Actually, range `TCP 2133 - 2137` will eventually be used.) \
 > If Host has DDNS configured, it is possible to connect to a domain like `szmelc.com` instead of IP adress \
 > Make sure Host has firewall rule allowing port `2137` as well as know's it's `public IP` adress (ipv4, ipv6 or domain name) \
 > SigmaⓁ uses serializing RSA keypairs for encryption / decryption of most traffic. \
@@ -110,4 +111,6 @@ $ tree
 - Improve UI
 - Encrypt files / URL's, everything
 - Built in temporary file hosting like `bashupload.com` & `szmelc.com/trashupload` for alternative file transfer method.
+- Write a CLI client!
+- Rewrite main client in Golang
 - 
