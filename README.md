@@ -9,7 +9,9 @@
 ### Some other details:
 > SigmaⓁ uses port `2137` as default communication's port \
 > If Host has DDNS configured, it is possible to connect to a domain like `szmelc.com` instead of IP adress \
-> Make sure Host has firewall rule allowing port `2137` as well as know's it's `public IP` adress (ipv4, ipv6 or domain name) 
+> Make sure Host has firewall rule allowing port `2137` as well as know's it's `public IP` adress (ipv4, ipv6 or domain name) \
+> SigmaⓁ uses serializing RSA keypairs for encryption / decryption of most traffic. \
+> It's actually possible to connect more clients to single host in single chatroom.
 
 ## Usage:
 0. Setup: 
@@ -103,4 +105,8 @@ $ tree
 - Add bridges / webhooks for other platforms
 - Add `/register` & `/login` functions. (will work on unique system UUID as authentication, letting user choose static nickname + password)
 - Create dedicated SigmaⓁ Comm protocol to make it easier to write custom clients / modules for.
+- Add support for static RSA
+- Improve UI
+- Encrypt files / URL's, everything
+- Built in temporary file hosting like `bashupload.com` & `szmelc.com/trashupload` for alternative file transfer method.
 - 
