@@ -7,13 +7,9 @@
 > Our goal is to add as many APIs and bridges as possible to connect SigmaⓁ with platforms like Discord, Matrix, Telegram, IRC, and more. Down the line, we also plan to add GSM functionality, letting you use SIM card telephony and even build your own call center using our framework! [Szmelc GSM](https://github.com/GNU-Szmelc/Szmelc-GSM) \
 > Android & iOS Apps are also possibly comming in near future!
 
-### Some other details:
-> SigmaⓁ uses `tcp` port `2137` as default communication's port. \
-> (Actually, range `TCP 2133 - 2137` will eventually be used.) \
-> If Host has DDNS configured, it is possible to connect to a domain like `szmelc.com` instead of IP adress \
-> Make sure Host has firewall rule allowing port `2137` as well as know's it's `public IP` adress (ipv4, ipv6 or domain name) \
-> SigmaⓁ uses serializing RSA keypairs for encryption / decryption of most traffic. \
-> It's actually possible to connect more clients to single host in single chatroom.
+### Screenshots:
+<img src="https://i.imgur.com/A7dgZdx.png" width="550">
+
 
 ## Usage:
 0. Setup: 
@@ -87,6 +83,15 @@ $ tree
 
 5 directories, 9 files
 ```
+
+### Some other details:
+> SigmaⓁ uses `tcp` port `2137` as default communication's port. \
+> (Actually, range `TCP 2133 - 2137` will eventually be used.) \
+> If Host has DDNS configured, it is possible to connect to a domain like `szmelc.com` instead of IP adress \
+> Make sure Host has firewall rule allowing port `2137` as well as know's it's `public IP` adress (ipv4, ipv6 or domain name) \
+> SigmaⓁ uses serializing RSA keypairs for encryption / decryption of most traffic. \
+> It's actually possible to connect more clients to single host in single chatroom.
+
 
 ### Known issues:
 - Buggy file transfer that auto saves any file
