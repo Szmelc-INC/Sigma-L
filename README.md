@@ -124,4 +124,6 @@ $ tree
 - `/register` & `/login` to add your UUID to DB for easy tracerouting
 - `/toggle` `debug|sound|fullscreen|cipher|html` - Move /fullscreen to /toggle fullscreen. (toggle debug will display debug screen)
 - `/reload` `config|screen|connection` (instead of /reconnect)
-- 
+- `/status` `online|hidden|silent` (set either own status as online (ping szmelc.com each 60s to display you as a anonymous users On-Line) (hidden = no ping) (silent mutes all sounds)
+- `/bridge` `webhook-dc|matrix|telegram` (add quick webhook / bot like bridge to other platform)
+- `/ssn` `ON|OFF` (Szmelc Station Network features) (You can use them, but you don't have to, select only features that you need) (stuff like UUID database, cloud etc)
