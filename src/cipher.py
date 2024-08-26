@@ -42,7 +42,7 @@ def is_url(text):
 
 
 def split_message(message):
-    """Split the message into URLs and non-URLs."""
+    """Split the message into URLs and non-URLs while preserving spaces."""
     parts = re.split(r'(\s+)', message)
     encrypted_parts = []
     non_encrypted_parts = []
@@ -62,7 +62,7 @@ def encrypt_message(message, public_key):
     encrypted_message = []
 
     for part in encrypted_parts:
-        if part.strip() != '':
+        if part.strip() != '':  # Encrypt non-space parts only
             encrypted = public_key.encrypt(
                 part.encode('utf-8'),
                 padding.OAEP(
@@ -72,7 +72,10 @@ def encrypt_message(message, public_key):
                 ),
             )
             encrypted_message.append(base64.b64encode(encrypted).decode('utf-8'))
-    
+        else:
+            # Preserve spaces in the encrypted message list
+            encrypted_message.append(' ')  
+
     # Use JSON to structure the message
     return json.dumps({
         'encrypted': encrypted_message,
@@ -91,21 +94,24 @@ def decrypt_message(encrypted_message, private_key):
         decrypted_message = []
 
         for encrypted_part in encrypted_parts:
-            decrypted = private_key.decrypt(
-                base64.b64decode(encrypted_part),
-                padding.OAEP(
-                    mgf=padding.MGF1(algorithm=hashes.SHA256()),
-                    algorithm=hashes.SHA256(),
-                    label=None,
-                ),
-            )
-            decrypted_message.append(decrypted.decode('utf-8'))
+            if encrypted_part == ' ':
+                decrypted_message.append(' ')  # Add space back
+            else:
+                decrypted = private_key.decrypt(
+                    base64.b64decode(encrypted_part),
+                    padding.OAEP(
+                        mgf=padding.MGF1(algorithm=hashes.SHA256()),
+                        algorithm=hashes.SHA256(),
+                        label=None,
+                    ),
+                )
+                decrypted_message.append(decrypted.decode('utf-8'))
 
-        # Format URLs as <URL> but keep them clickable
-        formatted_plaintext = [f'<a href="{part}" title="{part}">&lt;URL&gt;</a>' if is_url(part) else part for part in non_encrypted_parts]
-
-        # Combine decrypted and formatted non-encrypted parts
-        return ''.join(decrypted_message + formatted_plaintext)
+        # Combine decrypted parts and keep plaintext URLs intact
+        combined_message = ''.join(decrypted_message)
+        formatted_plaintext = ''.join(non_encrypted_parts)
+        
+        return combined_message + formatted_plaintext
 
     except Exception as e:
         return f"Decryption error: {e}"
