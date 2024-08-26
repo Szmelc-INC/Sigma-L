@@ -1,0 +1,32 @@
+{
+  "window": {
+    "width": 666,
+    "height": 420
+  },
+  "colors": {
+    "background": "#121212",
+    "text": "#d3d3d3",
+    "input_background": "#0b1a10",
+    "input_text": "#ffffff",
+    "host_color": "red",
+    "client_color": "yellow",
+    "system_message_color": "lightgreen"
+  },
+  "nicknames": {
+    "host": "[H]",
+    "client": "[C]"
+  },
+  "sound": {
+    "enabled": true,
+    "volume": {
+      "message": 1,
+      "error": 0.8,
+      "connection_lost": 0.8
+    },
+    "paths": {
+      "message": "sound/beep.wav",
+      "error": "sound/error.wav",
+      "connection_lost": "sound/silencer.wav"
+    }
+  }
+}
