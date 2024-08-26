@@ -94,7 +94,8 @@ $ tree
 - 
 
 ### To-Do
-- Add more usefull commands
+- Add markdown & css formatting support
+- Add more commands
 - Fix `/help` command output formatting
 - Make config easier and bigger
 - Make URL / Img embeds
