@@ -119,4 +119,9 @@ $ tree
 - Built in temporary file hosting like `bashupload.com` & `szmelc.com/trashupload` for alternative file transfer method.
 - Write a CLI client!
 - Rewrite main client in Golang
+
+### Possible upcoming commands:
+- `/register` & `/login` to add your UUID to DB for easy tracerouting
+- `/toggle` `debug|sound|fullscreen|cipher|html` - Move /fullscreen to /toggle fullscreen. (toggle debug will display debug screen)
+- `/reload` `config|screen|connection` (instead of /reconnect)
 - 
