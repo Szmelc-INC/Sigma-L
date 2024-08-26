@@ -1,7 +1,7 @@
-# SigmaL Communicator
+# SigmaⓁ Communicator
 
 ## About:
-> SigmaL is a project that began as a joke, turned into reality. \
+> SigmaⓁ is a project that began as a joke, turned into reality. \
 > By [$x66] and [_Se2_] 4 [Szmelc.INC] / [Entropy Linux] \
 > It's point is to be light, encrypted p2p and configurable (and also funny name, don't forget the funny name!) \
 > In future, we plan to add as much API's and "briges" as possible, to connect SigmaL to data stream from Discord, Matrix, Telegram, IRC or any other communicator. \
