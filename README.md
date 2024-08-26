@@ -3,7 +3,7 @@
 
 ## About:
 > SigmaⓁ started as a fun idea that became a real project. Created by [$x66] and [Se2] under [Szmelc.INC] and [Entropy Linux], it's a lightweight, encrypted, and customizable p2p communication tool. We’re focused on keeping it secure ans simple. \
-> Our goal is to add as many APIs and bridges as possible to connect SigmaⓁ with platforms like Discord, Matrix, Telegram, IRC, and more. Down the line, we also plan to add GSM functionality, letting you use SIM card telephony and even build your own call center using our framework! \
+> Our goal is to add as many APIs and bridges as possible to connect SigmaⓁ with platforms like Discord, Matrix, Telegram, IRC, and more. Down the line, we also plan to add GSM functionality, letting you use SIM card telephony and even build your own call center using our framework! [Szmelc GSM](https://github.com/GNU-Szmelc/Szmelc-GSM) \
 > Android & iOS Apps are also possibly comming in near future!
 
 ### Some other details:
