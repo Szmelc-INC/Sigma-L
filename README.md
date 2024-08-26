@@ -73,6 +73,8 @@ $ tree
 ├── main.py
 ├── config.json
 ├── logs
+├── sound
+|   ├── ...
 ├── src
 │   ├── cipher.py
 │   ├── commands.py
