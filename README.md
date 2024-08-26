@@ -1,7 +1,6 @@
 # SigmaⓁ Communicator
 <img src="https://i.imgur.com/dAGTvMK.png" width="350">
 
-
 ## About:
 > SigmaⓁ started as a fun idea that became a real project. Created by [$x66] and [Se2] under [Szmelc.INC] and [Entropy Linux], it's a lightweight, encrypted, and customizable p2p communication tool. We’re focused on keeping it secure ans simple. \
 > Our goal is to add as many APIs and bridges as possible to connect SigmaⓁ with platforms like Discord, Matrix, Telegram, IRC, and more. Down the line, we also plan to add GSM functionality, letting you use SIM card telephony and even build your own call center using our framework! \
@@ -10,8 +9,13 @@
 ### Some other details:
 > SigmaⓁ uses port `2137` as default communication's port \
 > If Host has DDNS configured, it is possible to connect to a domain like `szmelc.com` instead of IP adress \
+> Make sure Host has firewall rule allowing port `2137` as well as know's it's `public IP` adress (ipv4, ipv6 or domain name) 
 
 ## Usage:
+0. Setup: 
+> First, make sure you have all dependencies by running `setup.sh` \
+> After that you should be ready to roll, starting sigmal from `main.py` 
+
 1. Commands: \
 -`/clear` - Clear the chat screen \
 -`/exit` - Exit the application \
