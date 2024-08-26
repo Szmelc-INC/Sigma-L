@@ -1,11 +1,13 @@
 # SigmaⓁ Communicator
 
 ## About:
-> SigmaⓁ is a project that began as a joke, turned into reality. \
-> By [$x66] and [_Se2_] 4 [Szmelc.INC] / [Entropy Linux] \
-> It's point is to be light, encrypted p2p and configurable (and also funny name, don't forget the funny name!) \
-> In future, we plan to add as much API's and "briges" as possible, to connect SigmaL to data stream from Discord, Matrix, Telegram, IRC or any other communicator. \
-> Then in far future, we want to build in GSM functionality (SIM card telephony) + instructions & software on building your own call center!
+> SigmaⓁ started as a fun idea that became a real project. Created by [$x66] and [Se2] under [Szmelc.INC] and [Entropy Linux], it's a lightweight, encrypted, and customizable p2p communication tool. We’re focused on keeping it secure ans simple. \
+> Our goal is to add as many APIs and bridges as possible to connect SigmaⓁ with platforms like Discord, Matrix, Telegram, IRC, and more. Down the line, we also plan to add GSM functionality, letting you use SIM card telephony and even build your own call center using our framework!
+
+### Some other details:
+> SigmaⓁ uses port `2137` as default communication's port \
+> If Host has DDNS configured, it is possible to connect to a domain like `szmelc.com` instead of IP adress \
+> 
 
 ### Project tree
 ```
